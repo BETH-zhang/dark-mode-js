@@ -1,6 +1,6 @@
 {
-  "name": "dark-mode-js",
-  "version": "0.0.2",
+  "name": "@cxy227/dark-mode-js",
+  "version": "0.0.3",
   "description": "",
   "main": "index.js",
   "scripts": {
