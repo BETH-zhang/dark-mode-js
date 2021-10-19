@@ -2,7 +2,10 @@
   "name": "@cxy227/dark-mode-js",
   "version": "0.0.3",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "rollup -c",
     "release": "standard-version",
