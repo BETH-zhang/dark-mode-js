@@ -6,7 +6,8 @@
   "scripts": {
     "build": "rollup -c",
     "release": "standard-version",
-    "push": "git push github master && git push gitee master",
+    "add": "git add . && git commit -m 'update'",
+    "push": "npm run add && git push github master && git push gitee master",
     "prepublish": "npm run release && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
