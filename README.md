@@ -35,7 +35,7 @@ dark-mode-js 非常好用，复制粘贴以下代码或者使用 npm 包引入�
 * 缺点
   * 展现上有一定的瑕疵，尤其在某些 hover 的时候，个别地方颜色可能会没有对比度没有区分的很完善
 ```html
-<script src="https://cdn.jsdelivr.net/npm/@cxy227/dark-mode-js@0.0.5/dist/index.js" > </script> 
+<script src="https://cdn.jsdelivr.net/npm/@cxy227/dark-mode-js@0.1.2/dist/index.js" > </script> 
 <script>
   function init() {
       console.log('darkModeJs: ', darkModeJs)
@@ -55,7 +55,7 @@ dark-mode-js 非常好用，复制粘贴以下代码或者使用 npm 包引入�
 * 缺点
   * 需要添加配置，全局设置跟着 :root 的变量集走
 ```html
-<script src="https://cdn.jsdelivr.net/npm/@cxy227/dark-mode-js@0.0.5/dist/index.js" > </script> 
+<script src="https://cdn.jsdelivr.net/npm/@cxy227/dark-mode-js@0.1.2/dist/index.js" > </script> 
 <script>
   function init() {
       console.log('darkModeJs: ', darkModeJs)

@@ -19,12 +19,19 @@
   }
 
   export const cssLayer = (options) => `
+    .darkmode--activated img {
+      filter: hue-rotate(180deg);
+    }
+    .darkmode--activated .no-mode {
+      filter: hue-rotate(180deg);
+    }
     .darkmode-layer {
       position: fixed;
       pointer-events: none;
       background: ${options.mixColor};
       transition: all ${options.time} ease;
       mix-blend-mode: difference;
+      z-index: 10000;
     }
 
     .darkmode-layer--simple {
@@ -96,6 +103,7 @@ export const cssBtn = (options) => `
     align-items: center;
     margin: 0;
     padding: 0;
+    z-index: 10000;
   }
 
   .darkmode-toggle--white {
@@ -105,4 +113,6 @@ export const cssBtn = (options) => `
   .darkmode-toggle--inactive {
     display: none;
   }
+
+
 `
