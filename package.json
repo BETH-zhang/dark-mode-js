@@ -1,6 +1,6 @@
 {
   "name": "@cxy227/dark-mode-js",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Add dark mode to your website quickly",
   "main": "dist/index.js",
   "files": [
@@ -23,7 +23,7 @@
     "release": "standard-version",
     "add": "git add . && git commit -m 'update'",
     "push": "git push github master && git push gitee master",
-    "prepublish": "npm run build",
+    "prepublish": "npm run release && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "beth",
