@@ -21,8 +21,8 @@
 * 可以不引入小工具的情况下编写函数引用
 
 ## ✨ 演示
-* https/example/darkmode-js.html
-* darkmode-root.html
+* [css]: https://beth-zhang.github.io/dark-mode-js/example/darkmode-js.html
+* [:root]: https://beth-zhang.github.io/dark-mode-js/example/darkmode-root.html
 
 ## 📖 如何使用
 dark-mode-js 非常好用，复制粘贴以下代码或者使用 npm 包引入即可使用
