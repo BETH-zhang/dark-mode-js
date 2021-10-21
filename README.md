@@ -1,9 +1,9 @@
 # Dark Mode js
 [![npm version][npm-version-src]][npm-version-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
-[![License][license-src]][license-href]
-[![Medium Badge](https://badgen.net/badge/icon/medium?icon=medium&label)](https://medium.com/@qiuge227)
-[![Twitter: qiuge227](https://img.cxy227.io/twitter/follow/qiuge227.svg?style=social)](https://twitter.com/qiuge227)
+![jsdelivr downloads][jsdelivr-downloads-href]
+![License][license-href]
+[![twitter-href][twitter-href]](https://twitter.com/qiuge227)
 
 ## 😊 项目介绍
 为你的网站快速添加暗黑模式
@@ -117,12 +117,15 @@ Copyright (c) beth
 
 ## 参考
 查找各种 emoji 图表：https://emojipedia.org/first-quarter-moon/
+查找各种 徽章：https://shields.io/
 
 
 <!-- Badges -->
-[npm-version-src]: https://img.cxy227.io/npm/v/@cxy227/dark-mode-js/latest.svg
+[npm-version-src]: https://img.shields.io/npm/v/@cxy227/dark-mode-js
 [npm-version-href]: https://npmjs.com/package/@cxy227/dark-mode-js
-[npm-downloads-src]: https://img.cxy227.io/npm/dt/@cxy227/dark-mode-js.svg
+[npm-downloads-src]: https://img.shields.io/npm/dw/@cxy227/dark-mode-js
 [npm-downloads-href]: https://npmjs.com/package/@cxy227/dark-mode-js
 [license-src]: https://img.cxy227.io/npm/l/@cxy227/dark-mode-js.svg
-[license-href]: ./LICENSE
+[license-href]: https://img.shields.io/badge/license-MIT-green
+[jsdelivr-downloads-href]: https://img.shields.io/jsdelivr/gh/hy/cxy227/dark-mode-js
+[twitter-href]: https://img.shields.io/twitter/url?label=qiuge227&style=social&url=https%3A%2F%2Ftwitter.com%2Fqiuge227
