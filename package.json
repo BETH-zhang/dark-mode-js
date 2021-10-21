@@ -1,6 +1,6 @@
 {
   "name": "@cxy227/dark-mode-js",
-  "version": "0.1.2",
+  "version": "0.2.1",
   "description": "Add dark mode to your website quickly",
   "main": "dist/index.js",
   "files": [
