@@ -7,9 +7,8 @@
 
 ## 😊 项目介绍
 为你的网站快速添加暗黑模式
-Add dark mode to your website quickly
 
-该库使用 CSS min-blend-mode 将暗黑模式带入您的任何网站。您只需要复制一点代码骗到到您的项目中，
+该库使用 CSS min-blend-mode 和 :root 两种方式 将暗黑模式带入您的任何网站。您只需要复制一点代码到您的项目中，
 您将获得一个用来打开和关闭暗黑模式的小工具。该工具是轻量的，还默认使用本地存储，因此您设置的状态会被浏览器记住！
 
 我参考的项目是：https://github.com/sandoche/Darkmode.js
@@ -22,7 +21,8 @@ Add dark mode to your website quickly
 * 可以不引入小工具的情况下编写函数引用
 
 ## ✨ 演示
-● https/example/mvp.html
+* https/example/darkmode-js.html
+* darkmode-root.html
 
 ## 📖 如何使用
 dark-mode-js 非常好用，复制粘贴以下代码或者使用 npm 包引入即可使用

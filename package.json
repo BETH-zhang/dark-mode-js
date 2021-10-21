@@ -1,7 +1,7 @@
 {
   "name": "@cxy227/dark-mode-js",
   "version": "0.0.4",
-  "description": "",
+  "description": "Add dark mode to your website quickly",
   "main": "dist/index.js",
   "files": [
     "dist"
@@ -17,7 +17,8 @@
     "dark-theme"
   ],
   "scripts": {
-    "build": "rollup -c -w",
+    "dev": "rollup -c -w",
+    "build": "rollup -c",
     "release": "standard-version",
     "add": "git add . && git commit -m 'update'",
     "push": "npm run add && git push github master && git push gitee master",
