@@ -23,6 +23,7 @@
 ## ✨ 演示
 * [css]: https://beth-zhang.github.io/dark-mode-js/example/darkmode-js.html
 * [:root]: https://beth-zhang.github.io/dark-mode-js/example/darkmode-root.html
+* [hue-rotate]: https://beth-zhang.github.io/dark-mode-js/example/darkmode-hue.html
 
 ## 📖 如何使用
 dark-mode-js 非常好用，复制粘贴以下代码或者使用 npm 包引入即可使用
@@ -34,8 +35,8 @@ dark-mode-js 非常好用，复制粘贴以下代码或者使用 npm 包引入�
   * 不需要任何额外配置和修改
 * 缺点
   * 展现上有一定的瑕疵，尤其在某些 hover 的时候，个别地方颜色可能会没有对比度没有区分的很完善
-```html
-<script src="https://cdn.jsdelivr.net/npm/@cxy227/dark-mode-js@0.1.2/dist/index.js" > </script> 
+```javascript
+<script src="https://cdn.jsdelivr.net/npm/@cxy227/dark-mode-js@0.2.1/dist/index.js" > </script> 
 <script>
   function init() {
       console.log('darkModeJs: ', darkModeJs)
@@ -54,12 +55,33 @@ dark-mode-js 非常好用，复制粘贴以下代码或者使用 npm 包引入�
   * 效果更好，可以自定义部分内容颜色
 * 缺点
   * 需要添加配置，全局设置跟着 :root 的变量集走
-```html
-<script src="https://cdn.jsdelivr.net/npm/@cxy227/dark-mode-js@0.1.2/dist/index.js" > </script> 
+```javascript
+<script src="https://cdn.jsdelivr.net/npm/@cxy227/dark-mode-js@0.2.1/dist/index.js" > </script> 
 <script>
   function init() {
       console.log('darkModeJs: ', darkModeJs)
       const Widget = darkModeJs.darkMode
+      const darkmode = new Widget()
+
+      darkmode.showWidget()
+      darkmode.defaultTheme()
+  }
+
+  window.addEventListener('load', init);
+</script>
+```
+
+### 第三种方式，通过设置 hue-rotate
+* 优点
+  * 效果比一种展示上好点，尤其针对图片和链接来说
+* 缺点
+  * 由于全局设置 filter，为了让图片展示原来的色相，针对图片再进行一次 色相旋转。在滚动时有闪屏的情况，性能不稳定
+```javascript
+<script src="https://cdn.jsdelivr.net/npm/@cxy227/dark-mode-js@0.2.1/dist/index.js" > </script> 
+<script>
+  function init() {
+      console.log('darkModeJs: ', darkModeJs)
+      const Widget = darkModeJs.darkHue
       const darkmode = new Widget()
 
       darkmode.showWidget()

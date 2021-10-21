@@ -88,6 +88,7 @@ export const cssBtn = (options) => `
 
   .darkmode-toggle {
     background: ${options.buttonColorDark};
+    border: 1px solid ${options.buttonColorLight};
     width: 3rem;
     height: 3rem;
     position: fixed;
@@ -108,6 +109,7 @@ export const cssBtn = (options) => `
 
   .darkmode-toggle--white {
     background: ${options.buttonColorLight};
+    border: 1px solid ${options.buttonColorDark};
   }
 
   .darkmode-toggle--inactive {
