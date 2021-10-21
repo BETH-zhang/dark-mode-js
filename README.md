@@ -29,34 +29,77 @@ dark-mode-js 非常好用，复制粘贴以下代码或者使用 npm 包引入�
 
 ## 🚀 简单方法 （使用 JSDelivr CDN）
 只需要在您的 HTML 页面中嵌入以下代码
-```
-<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js" > </script> 
-<script> 
-  function addDarkmodeWidget() { 
-    new Darkmode().showWidget()
+### 第一种方式，默认通过 css min-blend-mode
+* 优点
+  * 不需要任何额外配置和修改
+* 缺点
+  * 展现上有一定的瑕疵，尤其在某些 hover 的时候，个别地方颜色可能会没有对比度没有区分的很完善
+```html
+<script src="https://cdn.jsdelivr.net/npm/@cxy227/dark-mode-js@0.0.5/dist/index.js" > </script> 
+<script>
+  function init() {
+      console.log('darkModeJs: ', darkModeJs)
+      const Widget = darkModeJs.darkMode
+      const darkmode = new Widget()
+
+      darkmode.showWidget()
+      darkmode.defaultTheme()
   }
-  window.addEventListener('load', addDarkmodeWidget) ; 
+
+  window.addEventListener('load', init);
+</script>
+```
+### 第二种方式，通过设置 :root 全局变量，维护一组变量集合
+* 优点
+  * 效果更好，可以自定义部分内容颜色
+* 缺点
+  * 需要添加配置，全局设置跟着 :root 的变量集走
+```html
+<script src="https://cdn.jsdelivr.net/npm/@cxy227/dark-mode-js@0.0.5/dist/index.js" > </script> 
+<script>
+  function init() {
+      console.log('darkModeJs: ', darkModeJs)
+      const Widget = darkModeJs.darkMode
+      const darkmode = new Widget()
+
+      darkmode.showWidget()
+      darkmode.defaultTheme()
+  }
+
+  window.addEventListener('load', init);
 </script>
 ```
 
 ## 📦 使用 NPM
-```
+```javascript
 npm install dark-mode-js
 ```
 
 然后添加一下 JavaScript 代码
-```
-import darkmode from 'dark-mode-js'
-new darkmode().showWidget()
+```javascript
+import darkModeJs from '@cxy227/dark-mode-js'
+const Widget = darkModeJs.darkMode
+const darkmode = new Widget()
+
+darkmode.showWidget()
+darkmode.defaultTheme()
 ```
 
 ## ⚙️ 参数设置
-```
+```javascript
 const options = {
-  
+  bottom: '64px', // default: '32px'
+  right: 'unset', // default: '32px'
+  left: '32px', // default: 'unset'
+  time: '0.5s', // default: '0.3s'
+  mixColor: '#fff', // default: '#fff'
+  backgroundColor: '#fff',  // default: '#fff'
+  buttonColorDark: '#100f2c',  // default: '#100f2c'
+  buttonColorLight: '#fff', // default: '#fff'
+  saveInCookies: false, // default: true,
+  label: '🌓', // default: ''
+  autoMatchOsTheme: true // default: true
 }
-const darkmode = new darkmode(options)
-darkmode.showWidget()
 ```
 
 ## 🎹 浏览器兼容性
@@ -77,9 +120,9 @@ Copyright (c) beth
 
 
 <!-- Badges -->
-[npm-version-src]: https://img.cxy227.io/npm/v/dark-mode-js/latest.svg
-[npm-version-href]: https://npmjs.com/package/dark-mode-js
-[npm-downloads-src]: https://img.cxy227.io/npm/dt/dark-mode-js.svg
-[npm-downloads-href]: https://npmjs.com/package/dark-mode-js
-[license-src]: https://img.cxy227.io/npm/l/dark-mode-js.svg
+[npm-version-src]: https://img.cxy227.io/npm/v/@cxy227/dark-mode-js/latest.svg
+[npm-version-href]: https://npmjs.com/package/@cxy227/dark-mode-js
+[npm-downloads-src]: https://img.cxy227.io/npm/dt/@cxy227/dark-mode-js.svg
+[npm-downloads-href]: https://npmjs.com/package/@cxy227/dark-mode-js
+[license-src]: https://img.cxy227.io/npm/l/@cxy227/dark-mode-js.svg
 [license-href]: ./LICENSE
