@@ -6,22 +6,33 @@
   "files": [
     "dist"
   ],
+  "keywords": [
+    "darkmode",
+    "dark",
+    "nightmode",
+    "night",
+    "dark-mode",
+    "night-mode",
+    "darktheme",
+    "dark-theme"
+  ],
   "scripts": {
-    "build": "rollup -c",
+    "build": "rollup -c -w",
     "release": "standard-version",
     "add": "git add . && git commit -m 'update'",
     "push": "npm run add && git push github master && git push gitee master",
     "prepublish": "npm run release && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "beth",
+  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.15.8",
     "@babel/preset-env": "^7.15.8",
     "rollup": "^2.58.0",
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-node-resolve": "^5.2.0",
-    "standard-version": "^9.3.2"
+    "standard-version": "^9.3.2",
+    "us-utils-asyncloadscript": "^1.1.3"
   }
 }
